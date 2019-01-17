@@ -8,29 +8,79 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 <style>
+img{
+	margin-top:-7%;
+	margin-left:0.5%;
+	width:99.5%;
+}
+.responsive{
+	max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width:400px)
+ {.btn {
+    max-width: 100%;
+    position:absolute;
+    top:23%;
+}
+}
+
+.btn{
+	position: absolute;
+	top:42%;
+	left:40%;
+	padding: 12px;
+	font-size: 32px;
+	padding-left: 26px;
+	padding-right:26px;
+	border:2px solid white;
+	background-color: transparent;
+	color: white;
+	font-family: 'Indie Flower', cursive;
+	font-weight: bold;
+
+}
+.btn:hover{
+  border:2px solid black;
+}
+.bg1{
+	font-family: 'Indie Flower', cursive;
+	color:white;
+}
+
 </style>
 </head>
 <body>
-<nav class="navbar naybar-fixed">
-<div class="container">
+<div class="container bg1">
+<nav class="navbar navbar-fixed">
+
 <button type="button" class='navbar-toggle' data-toggle="collapse" data-target="#navbarcollapse">
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
-	<span class="icon-bar"></span>
+	<i class="la la-bars" style="font-size: 25px;"></i>
+	<i class="la la-bars"></i>
+	<i class="la la-bars"></i>
+	<i class="la la-bars"></i>
 </button>
 <div class="collapse navbar-collapse" id="navbarcollapse">
 <ul class="nav navbar-nav navbar-right">
-<li style="font-size:17px; color:#000099;"><a href="#">Home</a></li>
-<li style="font-size:17px; color:#000099;"><a href="#">Skills</a></li>
-<li style="font-size:17px; color:#000099;"><a href="#">About</a></li>
-<li style="font-size:17px; color:#000099;"><a href="#">Contact</a></li>
+<li style="font-size:25px;"><a href="my portfolio.html">Home</a></li>
+<li style="font-size:25px;"><a href="skills portfolio.html">Skills</a></li>
+<li style="font-size:25px;"><a href="about portfolio.html">About</a></li>
+<li style="font-size:25px;"><a href="#">Contact</a></li>
 </div>
 </ul>
 </div>
-</div>
+
+<img src="https://cdn.shopify.com/s/files/1/1479/4790/files/K-Brady-A4-Portfolio-Book-Hartnack_Co-1300px_2048x2048.jpg?v=1521023087" class="responsive">
+<button type="btn" class="btn tbn-lg" id="demo" onclick= "myFunction()">MY PORTFOLIO</button>
+<script>
+function myFunction(){
+	window.location.assign("skills portfolio.html")
+}
+</script>
 </nav>
+</div>
 </body>
 </html>
 
